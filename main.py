@@ -26,12 +26,18 @@ def conta_caracteres(texto:str):
     controle = 0
     for letra in texto:
         controle = controle + 1
-
     return controle
+
+def conta_palavras(texto:str):
+    controle = 0
+    for letra in texto:
+        if letra == " ":
+            controle = controle + 1
+    return controle+1
 
 
 
 entrada = pass_lower(input("Digite o seu texto: "))
 
 
-print(conta_caracteres(entrada))
+print(conta_palavras(entrada))
