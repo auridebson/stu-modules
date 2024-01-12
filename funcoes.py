@@ -54,3 +54,12 @@ def divisao(num1,num2):
 def multiplicacao(num1, num2):
     resultado = num1 * num2
     return resultado
+
+def vpalidromo(frase:str):
+    resultado = False
+    frase.lower()
+    frase_espaco0 = frase.replace(" ","")
+    invertido = frase_espaco0[::-1].lower()
+    if frase_espaco0 == invertido:
+        resultado = True
+    return resultado
